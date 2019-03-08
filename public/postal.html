@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postage Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/postal.css">
+</head>
+<body>
+	<h1>Postage Calculator</h1>
+    <form action="/postage" method="GET">
+        <input type="number" step="0.5" placeholder="1 to 13 oz" name="weight"> Enter the weight of package or letter. <br>
+		<select name="packageType">
+			<option value="stamped letter">Letters (Stamped )</option>
+            <option value="metered letter">Letters (Metered)</option>
+            <option value="large envelope">Large Envelopes (Flat)</option>
+            <option value="package">First-Class Package Service - Retail</option>
+		</select> Select package type.<br>
+		<input class="button" type="submit" name="submit">
+	</form>
+</body>
+</html>
